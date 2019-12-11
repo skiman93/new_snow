@@ -2,6 +2,7 @@
 
 	// Add your code here
 	gs.console.log("test");
+	gs.addErrorMessage("New error");
 	
 
 })(current, previous);
