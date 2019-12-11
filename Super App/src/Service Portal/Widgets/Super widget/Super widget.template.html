@@ -1,0 +1,71 @@
+<div>
+<!-- your widget template -->
+<form name="superhero_register" class="form-horizontal" novalidate ng-submit="c.submitForm();">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Superhero Registration</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="real_name">Real Name</label>  
+  <div class="col-md-4">
+  <input ng-model="c.real_name" id="real_name" name="real_name" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="super_name">Super Name</label>  
+  <div class="col-md-4">
+  <input ng-model="c.super_name" id="super_name" name="super_name" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="univerise">Universe</label>  
+  <div class="col-md-4">
+  <input ng-model="c.universe" id="univerise" name="univerise" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="home">Home</label>  
+  <div class="col-md-4">
+  <input ng-model="c.home" id="home" name="home" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+  
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkbox">Test Form: </label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkbox-0">
+      <input ng-change="c.toggle()" ng-model="c.box" type="checkbox" name="checkbox" id="checkbox-0" value="test_box">
+      True
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button"></label>
+  <div class="col-md-4">
+    <button id="button" name="button" class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+  <div ng-if="c.message" id="errorMessage" class="alert alert-danger" role="alert">{{c.message}}</div>
+  <div ng-if="c.success" id="successMessage" class="alert alert-success" role="alert">{{c.success}}</div>
+</form>
+
+</div>
